@@ -39,7 +39,7 @@ Delimiter character can be specified with option '-d DELIMITER'. Default is tab.
 
 ## Chart types
 
-termeter can following type charts. 
+termeter supports following chart types. 
 
 * LINE
   * Plot values as line plot
