@@ -63,7 +63,7 @@ Following charcters can be used.
 ### Example of chart types
 
 ```bash
-$ (echo "line counter cdf"; seq 1 1000 | awk '{x=int(6*rand)+1; print x,x,x}') | termeter -d " " -t lcd -S numerical
+$ (echo "line counter cdf"; seq 1 1000 | awk '{x=int(6*rand())+1; print x,x,x}') | termeter -d " " -t lcd -S numerical
 ```
 
 ![charttype](https://qiita-image-store.s3.amazonaws.com/0/15114/653ddf3a-bc0f-6f76-f39f-984bd33eaff4.png)
