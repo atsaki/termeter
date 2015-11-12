@@ -11,7 +11,7 @@ import (
 
 	"github.com/andrew-d/go-termutil"
 	"github.com/atsaki/termeter"
-	"github.com/gizak/termui"
+	"gopkg.in/gizak/termui.v1"
 	"github.com/nsf/termbox-go"
 	"gopkg.in/alecthomas/kingpin.v1"
 )

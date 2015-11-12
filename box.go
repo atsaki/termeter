@@ -1,7 +1,7 @@
 package termeter
 
 import (
-	"github.com/gizak/termui"
+	"gopkg.in/gizak/termui.v1"
 	"github.com/nsf/termbox-go"
 )
 

@@ -1,6 +1,6 @@
 package termeter
 
-import "github.com/gizak/termui"
+import "gopkg.in/gizak/termui.v1"
 
 type BarChartWidget struct {
 	BarChart *termui.BarChart
