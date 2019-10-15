@@ -1,4 +1,4 @@
-#!/usr/bin/env -S docker build --compress -t pvtmert/termeter -f
+#!/usr/bin/env -S docker build --compress -t atsaki/termeter -f
 
 FROM debian as build
 
