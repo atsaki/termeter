@@ -42,14 +42,14 @@ Delimiter character can be specified with option '-d DELIMITER'. Default is tab.
 termeter supports following chart types. 
 
 * LINE
-  * Plot values as line plot
+  * Plot values as line chart
 * COUNTER
   * Bar chart of frequencies
 * CDF
   * Cumulative distribution function
 
-By default, termeter choose chart type automatically from second line of data.
-If value is numeric LINE is choosed. Otherwise, COUNTER is choosed. 
+By default, termeter detects chart type automatically from second line of data.
+If value is numeric LINE is chosen. Otherwise, COUNTER is used. 
 
 You can specify chart type with option ```-t TYPESTRING```.
 nth character of TYPESTRING corresponds to nth chart type.
