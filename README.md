@@ -21,9 +21,25 @@ $ seq 300 | awk 'BEGIN{OFS="\t"; print "x","sin(x)","cos(x)"}{x=$1/10; print x,s
 
 ## Installation
 
+If you do not have a go enviroment prepared with the corresponding `GOPATH`
+environment variable, you can run these command in Linux:
+
 ```bash
-$ go get github.com/atsaki/termeter/cmd/termeter
+mkdir $HOME/go
+
+echo "export GOPATH=$HOME/go" >> $HOME/.bashrc
+echo "export PATH=$PATH:$GOPATH/bin" >> $HOME/.bashrc
 ```
+
+Restart the session to have the new environment variables.
+
+With the go environment prepared, you have to run to install:
+
+```bash
+go get github.com/atsaki/termeter/cmd/termeter
+```
+
+The command `termeter` should be in your path.
 
 ## Input Data
 
