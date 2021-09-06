@@ -33,7 +33,8 @@ echo "export PATH=$PATH:$GOPATH/bin" >> $HOME/.bashrc
 
 Restart the session to have the new environment variables.
 
-With the go environment prepared, you have to run to install:
+With the go environment prepared, you have to run this command in order to
+install termeter:
 
 ```bash
 go get github.com/atsaki/termeter/cmd/termeter
@@ -49,13 +50,12 @@ You can input data with stdin or file.
 $ cat data.txt | termeter
 $ termeter data.txt
 ```
-
 termeter can accept tabular data like CSV. 
 Delimiter character can be specified with option '-d DELIMITER'. Default is tab.
 
 ## Chart types
 
-termeter supports following chart types. 
+termeter supports following chart types:
 
 * LINE
   * Plot values as line plot
@@ -65,7 +65,7 @@ termeter supports following chart types.
   * Cumulative distribution function
 
 By default, termeter choose chart type automatically from second line of data.
-If value is numeric LINE is choosed. Otherwise, COUNTER is choosed. 
+If value is numeric LINE is choosed. Otherwise, COUNTER is choosed.
 
 You can specify chart type with option ```-t TYPESTRING```.
 nth character of TYPESTRING corresponds to nth chart type.
@@ -95,6 +95,14 @@ $ tail -f -n +7 dstat.log | termeter -d ,
 ```
 
 <a href="https://asciinema.org/a/18129"><img src="https://asciinema.org/a/18129.png" /></a>
+
+## Data labels
+
+You specify which data labels to use as X axis in line charts with the option `-L` and one of these options:
+
+* **count**: use the count of data. (Default)
+* **first**: use the first column, i.e., the first value in the same line.
+* **time**: use current time.
 
 ## License
 
