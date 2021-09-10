@@ -37,7 +37,7 @@ With the go environment prepared, you have to run this command in order to
 install termeter:
 
 ```bash
-go get github.com/atsaki/termeter/cmd/termeter
+go get github.com/jentrialgo/termeter/cmd/termeter
 ```
 
 The command `termeter` should be in your path.
