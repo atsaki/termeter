@@ -27,8 +27,8 @@ environment variable, you can run these command in Linux:
 ```bash
 mkdir $HOME/go
 
-echo "export GOPATH=$HOME/go" >> $HOME/.bashrc
-echo "export PATH=$PATH:$GOPATH/bin" >> $HOME/.bashrc
+echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' >> $HOME/.bashrc
 ```
 
 Restart the session to have the new environment variables.
