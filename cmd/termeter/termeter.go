@@ -135,7 +135,6 @@ func main() {
 
 	if *dataLabelMode == "first" {
 		labels = labels[1:]
-		record = record[1:]
 	}
 
 	types := make([]rune, len(labels), len(labels))
